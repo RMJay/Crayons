@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Crayons</title>
+    </head>
+    <body>
+        <table>
+        <tr>
+            #for(crayon in greyscale) {
+            <td style="background-color:##(crayon.hexRed)#(crayon.hexGreen)#(crayon.hexBlue);
+                color: #if(crayon.isDark) { #FFFFFF } else { #000000 }">
+                #(crayon.name)<br>
+                $FF#(crayon.hexRed)#(crayon.hexGreen)#(crayon.hexBlue)<br>
+                #(crayon.decimalRed)f, #(crayon.decimalGreen)f, #(crayon.decimalBlue)f, 1.0f
+            </td>
+            }
+        </tr>
+        <tr>
+            #for(crayon in dark) {
+            <td style="background-color:##(crayon.hexRed)#(crayon.hexGreen)#(crayon.hexBlue);
+                color: #if(crayon.isDark) { #FFFFFF } else { #000000 }">
+                #(crayon.name)<br>
+                $FF#(crayon.hexRed)#(crayon.hexGreen)#(crayon.hexBlue)<br>
+                #(crayon.decimalRed)f, #(crayon.decimalGreen)f, #(crayon.decimalBlue)f, 1.0f
+            </td>
+            }
+        </tr>
+        <tr>
+            #for(crayon in bright) {
+            <td style="background-color:##(crayon.hexRed)#(crayon.hexGreen)#(crayon.hexBlue);
+                color: #if(crayon.isDark) { #FFFFFF } else { #000000 }">
+                #(crayon.name)<br>
+                $FF#(crayon.hexRed)#(crayon.hexGreen)#(crayon.hexBlue)<br>
+                #(crayon.decimalRed)f, #(crayon.decimalGreen)f, #(crayon.decimalBlue)f, 1.0f
+            </td>
+            }
+        </tr>
+        <tr>
+            #for(crayon in light) {
+            <td style="background-color:##(crayon.hexRed)#(crayon.hexGreen)#(crayon.hexBlue);
+                color: #if(crayon.isDark) { #FFFFFF } else { #000000 }">
+                #(crayon.name)<br>
+                $FF#(crayon.hexRed)#(crayon.hexGreen)#(crayon.hexBlue)<br>
+                #(crayon.decimalRed)f, #(crayon.decimalGreen)f, #(crayon.decimalBlue)f, 1.0f
+            </td>
+            }
+        </tr>
+        <table>
+    </body>
+</html>
