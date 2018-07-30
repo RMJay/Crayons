@@ -19,6 +19,6 @@
     </a>
 </center>
 
-This simple project generates a html table of all the Apple crayon colors along with their literal values. It uses Vapor web framework and the Leaf templating engine. Here is the result which you can access at http://localhost:8080/crayons once you run the Xcode project.
+This simple project generates a html table of all the Apple crayon colors along with their literal values. It uses the Vapor web framework and the Leaf templating engine. Here is the result which you can access at http://localhost:8080/crayons once you run the Xcode project.
 
 ![expected result](crayons2.png)
